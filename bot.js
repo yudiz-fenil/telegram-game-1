@@ -54,5 +54,5 @@ process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
 
 // Set up webhook
-const url = 'https://game.webdevprojects.cloud/telegram-game-1/bot' + token;
+const url = 'https://telegram1.game.webdevprojects.cloud/bot' + token;
 bot.telegram.setWebhook(url);
