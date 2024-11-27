@@ -7,7 +7,7 @@ const GAME_URL = 'https://game.yudiz.com/bounce-blitz/';
 
 const bot = new Telegraf(token);
 const app = express();
-const port = 3021;
+const port = 3027;
 
 app.use(bodyParser.json());
 
@@ -54,5 +54,5 @@ process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
 
 // Set up webhook
-const url = 'https://telegram1.game.webdevprojects.cloud/bot' + token;
+const url = 'https://telegrams1.game.webdevprojects.cloud/bot' + token;
 bot.telegram.setWebhook(url);
